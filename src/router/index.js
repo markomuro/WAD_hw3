@@ -7,6 +7,16 @@ Vue.use(VueRouter);
 
 const routes = [
   {
+    path: "/",
+    name: "indexpage",
+    component: Main,
+  },
+  {
+    path: "/main",
+    name: "Main",
+    component: Main,
+  },
+  {
     path: "/about",
     name: "About",
     // route level code-splitting
@@ -20,11 +30,7 @@ const routes = [
     name: "Contactus",
     component: Contactus,
   },
-  {
-    path: "/",
-    name: "Main",
-    component: Main,
-  },
+  
 
 ];
 

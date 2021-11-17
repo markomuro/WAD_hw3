@@ -38,7 +38,6 @@ export default {
 #nav {
   padding: 30px;
 
-
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -52,9 +51,10 @@ export default {
 #footer {
   padding: 15px;
   position:fixed;
-  bottom: 0;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   align-self: center;
-
 
   background-color: rgb(232, 240, 240);
 
