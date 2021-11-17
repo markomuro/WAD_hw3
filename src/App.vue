@@ -50,10 +50,13 @@ export default {
 }
 
 #footer {
-  padding: 30px;
+  padding: 15px;
   position:fixed;
-  bottom:0;
+  bottom: 0;
   align-self: center;
+
+
+  background-color: rgb(232, 240, 240);
 
   a {
     font-weight: bold;
