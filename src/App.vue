@@ -6,7 +6,7 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/contactus">Contact</router-link>
     </div> -->
-    <!-- <router-view /> -->
+    <router-view />
     <footercompo/>
   </div>
 </template>
@@ -36,7 +36,12 @@ export default {
 }
 
 #nav {
-  padding: 30px;
+  padding: 20px;
+  background-color: rgb(232, 240, 240);
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
 
   a {
     font-weight: bold;

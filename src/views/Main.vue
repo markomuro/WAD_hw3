@@ -1,43 +1,28 @@
 <template>
 <div>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
-    <p>haha</p>
+    <!-- post components to be added here -->
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+    <p>post component</p>
+
 </div>
 </template>
 
 style <style scoped>
 
 div{
-    margin-top: 30px;
+    margin-top: 100px;
 }
 </style>
