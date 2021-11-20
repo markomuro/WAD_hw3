@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-    <headercompo/>
+    <headercompo />
+
     <!-- <div id="nav">
       <router-link to="/main">Main</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/contactus">Contact</router-link>
     </div> -->
     <!-- <router-view /> -->
-    <footercompo/>
+
+    <footercompo />
   </div>
 </template>
 
@@ -19,7 +21,7 @@ export default {
   name: "App",
   components: {
     headercompo,
-    footercompo
+    footercompo,
   },
 };
 </script>
@@ -31,13 +33,13 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
+  //background: #e8f7f0;
 }
 
 #nav {
-  padding: 30px;
-
+  // padding: 30px;
 
   a {
     font-weight: bold;
@@ -51,17 +53,15 @@ export default {
 
 #footer {
   padding: 15px;
-  position:fixed;
+  position: fixed;
   bottom: 0;
-  align-self: center;
-
+  align-self: left;
 
   background-color: rgb(232, 240, 240);
 
   a {
     font-weight: bold;
     color: #2c3e50;
-
   }
 }
 </style>
