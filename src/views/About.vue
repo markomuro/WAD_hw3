@@ -7,8 +7,7 @@
 </template>
 
 <style scoped>
-.about{
+.about {
   margin-top: 100px;
 }
-
 </style>

@@ -23,6 +23,7 @@
           <p>{{ counter }}</p>
         </div>
       </section>
+      <br />
     </div>
   </div>
 </template>
@@ -49,10 +50,9 @@ export default {
 
 <style scoped>
 .post {
-  padding: 30px;
-  width: 65%;
-  display: flex;
-  flex-direction: column;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  width: 40%;
   justify-content: space-between;
   border-radius: 10px;
   margin: 20px;
@@ -61,7 +61,7 @@ export default {
   margin-right: 5px;
   color: dimgrey;
   margin-left: 5px;
-  font-size: smaller;
+  font-size: large;
 }
 
 .facelogo {
@@ -71,7 +71,7 @@ export default {
 }
 
 .facelogo img {
-  height: 35px;
+  height: 50px;
   margin-left: 5px;
 }
 
@@ -96,27 +96,7 @@ export default {
 
 div.content_picture + div p {
   color: black;
-  font-size: medium;
-  font-style: italic;
-}
-.post div > p {
-  margin-right: 10px;
-  color: dimgrey;
-  margin-left: 10px;
-  font-size: smaller;
-}
-
-.center section {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
-}
-
-.content_picture img {
-  width: 100%;
-}
-
-div.content_picture + div p {
-  color: black;
-  font-size: medium;
+  font-size: large;
   font-style: italic;
 }
 </style>
