@@ -12,7 +12,7 @@
     <section class="posts">
       <div class="facelogo">
         <p>{{ author }}</p>
-        <p>{{ create_time }}</p>
+        <p>{{ time }}</p>
       </div>
       <div class="content_picture"><img :src="image1" /></div>
       <div>
@@ -33,24 +33,18 @@
 
 export default {
   name: "postcompo",
-  /*   data: function () {
-    return {
-    }; 
-  },*/
-  props: [
-    "key",
-    "body",
-    "author",
-    "image1",
-    "image2",
-    "create_time",
-    "counter",
-  ],
-  /*   methods: {
-    ...mapActions(["fetchPosts"]),
+  data: function () {
+    return {};
+  },
+  props: ["body", "author", "image1", "image2", "time", "counter"],
+  /*methods: {
     countLikes() {
       this.counter++;
     },
+  },
+  
+    ...mapActions(["fetchPosts"]),
+
   },
   computed: mapGetters(["posts"]),
   created() {
