@@ -1,6 +1,6 @@
 <template>
   <div class="post">
-    <div
+    <!--     <div
       v-for="apost in posts"
       :key="apost.id"
       :body="apost.body"
@@ -8,52 +8,63 @@
       :image1="apost.image1"
       :image2="apost.image2"
       :time="apost.create_time"
-    >
-      <section class="posts">
-        <div class="facelogo">
-          <p>{{ apost.author }}</p>
-          <p>{{ apost.create_time }}</p>
-        </div>
-        <div class="content_picture"><img :src="apost.image1" /></div>
-        <div>
-          <p>{{ apost.body }}</p>
-        </div>
-        <div class="like">
-          <img @click="counter++" :src="apost.image2" />
-          <p>{{ counter }}</p>
-        </div>
-      </section>
-      <br />
-    </div>
+    > -->
+    <section class="posts">
+      <div class="facelogo">
+        <p>{{ author }}</p>
+        <p>{{ create_time }}</p>
+      </div>
+      <div class="content_picture"><img :src="image1" /></div>
+      <div>
+        <p>{{ body }}</p>
+      </div>
+      <div class="like">
+        <img @click="counter++" :src="image2" />
+        <p>{{ counter }}</p>
+      </div>
+    </section>
+    <br />
   </div>
+  <!-- </div> -->
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
+// import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: "postcompo",
-  data: function () {
+  /*   data: function () {
     return {
-      counter: 0,
-    };
-  },
-  methods: {
+    }; 
+  },*/
+  props: [
+    "key",
+    "body",
+    "author",
+    "image1",
+    "image2",
+    "create_time",
+    "counter",
+  ],
+  /*   methods: {
     ...mapActions(["fetchPosts"]),
+    countLikes() {
+      this.counter++;
+    },
   },
   computed: mapGetters(["posts"]),
   created() {
     this.fetchPosts();
-  },
+  }, */
 };
 </script>
 
 <style scoped>
 .post {
-  padding-top: 150px;
-  padding-bottom: 100px;
-  width: 40%;
-  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 70%;
+  justify-content: center;
   border-radius: 10px;
   margin: 20px;
 }
@@ -84,6 +95,7 @@ export default {
 .like img {
   height: 35px;
   margin-left: 5px;
+  cursor: pointer;
 }
 
 .center section {
