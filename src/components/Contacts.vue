@@ -23,7 +23,7 @@
 
 <style scoped>
 .contactus{
-  margin-top: 100px;
+  margin-top: 150px;
   display:flex;
   justify-content: space-evenly;
   align-content: space-around;

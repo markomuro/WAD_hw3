@@ -33,9 +33,9 @@
 
 export default {
   name: "postcompo",
-  data: function () {
+  /* data: function () {
     return {};
-  },
+  }, */
   props: ["body", "author", "image1", "image2", "time", "counter"],
   /*methods: {
     countLikes() {
@@ -57,7 +57,7 @@ export default {
 .post {
   padding-top: 50px;
   padding-bottom: 50px;
-  width: 70%;
+  width: 60%;
   justify-content: center;
   border-radius: 10px;
   margin: 20px;

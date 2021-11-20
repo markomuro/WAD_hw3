@@ -8,6 +8,6 @@
 
 <style scoped>
 .about {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 </style>

@@ -16,6 +16,9 @@
       <div class="search-container">
         <input type="text" /><button>Search</button>
       </div>
+      <div class="clearlikes">
+        <button>Clear <br> all <br>likes</button>
+      </div>
 
       <div class="dropdown">
         <img
@@ -94,5 +97,18 @@ nav div.search-container > input:hover {
 }
 .dropbtn {
   border: none;
+}
+.clearlikes button {
+  box-sizing: border-box;
+  border-radius: 5px;
+  height: 55px;
+  width: 130%;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+  background-color: #42b983;
+  color: white;
+  font-weight: bolder;
 }
 </style>
