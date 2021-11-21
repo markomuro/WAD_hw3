@@ -53,4 +53,19 @@ export default new Vuex.Store({
        return state.posts;
      }
    } */
+   actions:{
+     ResetLikesAct: act => {
+      setTimeout(function() {
+        act.commit("ResetLikes")
+        }, 1000)
+        }
+  },
+  mutations:{
+    ResetLikes: state => {
+      state.posts.forEach(post => {
+      post.counter -= 1;
+      post.counter += 1;
+      })
+      }   
+      }
 });

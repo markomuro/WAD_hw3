@@ -17,7 +17,7 @@
         <input type="text" /><button>Search</button>
       </div>
       <div class="clearlikes">
-        <button>Clear <br> all <br>likes</button>
+        <button v-on:click="ResetLikes">Clear <br> all <br>likes</button>
       </div>
 
       <div class="dropdown">
@@ -35,7 +35,10 @@
 <script>
 export default {
   name: "headercompo",
-};
+  methods: {
+  ResetLikes() {
+    this.$store.dispatch("ResetLikesAct")
+}}};
 </script>
 
 <style scoped>

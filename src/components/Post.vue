@@ -50,6 +50,12 @@ export default {
   created() {
     this.fetchPosts();
   }, */
+  /*computed: {
+    posts(){
+    return this.$store.state.posts
+    }
+  }
+  */
 };
 </script>
 
