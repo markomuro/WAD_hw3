@@ -8,7 +8,6 @@
       <router-link to="/contactus">Contact</router-link>
     </div> -->
     <router-view />
-    <main></main>
     <footercompo />
   </div>
 </template>
