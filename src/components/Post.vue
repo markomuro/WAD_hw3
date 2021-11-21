@@ -19,7 +19,8 @@
         <p>{{ body }}</p>
       </div>
       <div class="like">
-        <img @click="counter++" :src="image2" />
+        <!-- <img @click="counter++" :src="image2" /> -->
+        <img v-on:click="$emit('inc_counter')" :src="image2" />
         <p>{{ counter }}</p>
       </div>
     </section>
@@ -33,10 +34,15 @@
 
 export default {
   name: "postcompo",
-  /* data: function () {
-    return {};
-  }, */
+
   props: ["body", "author", "image1", "image2", "time", "counter"],
+
+  /* computed: {
+    posts() {
+      return this.$store.state.posts;
+    },
+  } */
+  
   /*methods: {
     countLikes() {
       this.counter++;
@@ -50,12 +56,7 @@ export default {
   created() {
     this.fetchPosts();
   }, */
-  /*computed: {
-    posts(){
-    return this.$store.state.posts
-    }
-  }
-  */
+
 };
 </script>
 

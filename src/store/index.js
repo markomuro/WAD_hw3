@@ -63,9 +63,11 @@ export default new Vuex.Store({
   mutations:{
     ResetLikes: state => {
       state.posts.forEach(post => {
-      post.counter -= 1;
-      post.counter += 1;
+      /* post.counter -= 1;
+      post.counter += 1; */
+      post.counter = 0;
+
       })
-      }   
-      }
+    },
+  }
 });

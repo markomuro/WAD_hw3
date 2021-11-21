@@ -9,6 +9,7 @@
       :image2="apost.image2"
       :time="apost.create_time"
       :counter="apost.counter"
+      v-on:inc_counter="apost.counter++"
     >
     </postcompo>
   </div>
@@ -20,11 +21,17 @@ import postcompo from "@/components/Post.vue";
 export default {
   name: "Post_info",
   components: { postcompo },
+
   computed: {
     posts() {
       return this.$store.state.posts;
     },
+
   },
+  methods: {
+
+  }
+  
 };
 </script>
   <style scoped>
