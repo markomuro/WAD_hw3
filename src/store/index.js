@@ -14,7 +14,7 @@ export default new Vuex.Store({
     contactlist: [
       { id: 1, name: "Marko", email: "marko.muro@ut.ee", tel: "123456789", address: "Tartu" },
       { id: 2, name: "Aleksandra", email: "aleksandra.doroshenko@ut.ee", tel: "555-01234", address: "Tartu" },
-      { id: 3, name: "Uku", email: "fill in", tel: "fill in", address: "Tartu" }
+      { id: 3, name: "Uku", email: "uku.zingel@ut.ee", tel: "123456789", address: "Tartu" }
     ],
     posts: [
       { id: 1, body: "If we cannot end now our differences, at least we can help make the world safe for diversity.", author: "John F. Kennedy", image1: "https://picsum.photos/1024/768", image2: "https://image.similarpng.com/very-thumbnail/2020/06/Like-button-blue-facebook-transparent-PNG.png", create_time: "Sep 19, 2021 13:56", counter: 0 },
